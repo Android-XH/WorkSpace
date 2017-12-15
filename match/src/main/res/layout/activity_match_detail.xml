@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/appBackground"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_title" />
+
+    <com.zbmf.worklibrary.pulltorefresh.PullToRefreshScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/pull_scrollview"
+        app:ptrMode="pullFromStart"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            >
+
+            <include layout="@layout/match_detail_title" />
+
+            <include layout="@layout/match_detail_layout" />
+
+            <include layout="@layout/match_detail_content"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:textColor="@color/black_33"
+                android:layout_marginTop="10dp"
+                android:textSize="18dp"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:text="邀请好友参赛"
+                android:id="@+id/tv_share_friend"
+                android:drawableLeft="@drawable/icon_share_friend"
+                />
+            <include layout="@layout/match_detail_hold"/>
+        </LinearLayout>
+    </com.zbmf.worklibrary.pulltorefresh.PullToRefreshScrollView>
+</LinearLayout>

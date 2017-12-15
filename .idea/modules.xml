@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/WorkSpace.iml" filepath="$PROJECT_DIR$/WorkSpace.iml" />
+      <module fileurl="file://$PROJECT_DIR$/match/match.iml" filepath="$PROJECT_DIR$/match/match.iml" />
+      <module fileurl="file://$PROJECT_DIR$/worklibrary/worklibrary.iml" filepath="$PROJECT_DIR$/worklibrary/worklibrary.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="match_tag">
+        <item >城市</item>
+        <item >高校</item>
+        <item >券商</item>
+        <item >最新比赛</item>
+        <item >全部</item>
+    </array>
+    <array name="match_rank_tag">
+        <item >最新交易</item>
+        <item >日榜</item>
+        <item >周榜</item>
+        <item >月榜</item>
+        <item >总榜</item>
+    </array>
+</resources>

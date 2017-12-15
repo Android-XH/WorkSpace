@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingTop="20dp">
+    <!--android.support.design:hintAnimationEnabled | 是否显示hint的动画,默认true-->
+    <!--android.support.design:hintEnabled | 是否使用hint属性,默认true-->
+    <!--android.support.design:hintTextAppearance | 设置hint的文字样式(指运行动画效果之后的样式)-->
+    <!--android.support.design:counterEnabled | 是否显示计数器-->
+    <!--android.support.design:counterMaxLength | 设置计数器的最大值-->
+    <!--android.support.design:counterOverflowTextAppearance | 输入字符大于我们限定个数字符时的样式-->
+    <!--app:theme 设置浮动标签的颜色主题-->
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/ti_user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:hint="请输入手机号或用户名"
+        android:textColorHint="@color/black_99"
+        app:hintTextAppearance="@style/EditTextHintStyle">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/et_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:drawablePadding="10dp"
+            android:imeOptions="actionNext"
+            android:drawableLeft="@drawable/icon_user"
+            android:nextFocusForward="@+id/et_user_pass"
+            android:singleLine="true"
+            android:textColor="@color/black"
+         />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/it_user_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:textColorHint="@color/black_99"
+        app:counterEnabled="true"
+        app:counterMaxLength="18"
+        app:counterOverflowTextAppearance="@style/EditErrTextStyle"
+        app:counterTextAppearance="@style/EditTextCountStyle"
+        app:hintTextAppearance="@style/EditTextHintStyle"
+        >
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/et_user_pass"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:drawableLeft="@drawable/icon_pwd"
+            android:drawablePadding="10dp"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+            android:textColor="@color/black"
+           />
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:id="@+id/btn_reg"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/login_button"
+        android:gravity="center"
+        android:text="登录"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+</LinearLayout>

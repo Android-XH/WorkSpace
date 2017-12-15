@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">炒股大赛</string>
+    <string name="login_loading">正在登录...</string>
+    <string name="err_input_name">请输入用户名</string>
+    <string name="err_input_true_name">请输入真实姓名</string>
+    <string name="err_input_pass">请输入密码</string>
+    <string name="err_input_phone">请输入手机号</string>
+    <string name="err_input_code">请输入验证码</string>
+    <string name="get_code">获取验证码</string>
+
+    <string name="create_match">已成功举办%1$d场比赛</string>
+    <string name="match_player">共%1$d人参赛</string>
+    <string name="match_players">%1$d人</string>
+    <string name="match_pays">魔方宝%1$d</string>
+
+    <string name="match_detail_players">参赛人数：%1$d人</string>
+    <string name="match_detail_date">比赛时间：%s至%s</string>
+    <string name="match_detail_rank">第%1$d名</string>
+    <string name="match_detail_money">%,d%n</string>
+    <string name="match_win_player">在%1$d名选手中战胜%2$d人</string>
+    <string name="match_dieal_stock">%s %s %s(%s)</string>
+
+    <string name="match_rank">排行榜</string>
+    <string name="match">比赛</string>
+    <string name="drill">训练</string>
+    <string name="stock">自选股</string>
+    <string name="match_desc_title">比赛简介</string>
+    <string name="match_desc_award">无奖品信息</string>
+    <string name="match_apply_date">报名时间：%s-%s</string>
+    <string name="match_start_date">比赛时间：%s-%s</string>
+    <string name="match_money">比赛起始资金：%s</string>
+    <string name="match_is_player">已参赛</string>
+    <string name="match_is_not_player">未参赛</string>
+    <string name="match_is_over">已结束</string>
+    <string name="match_apply_over">报名结束</string>
+    <string name="match_join">报名参赛</string>
+    <string name="match_join_success">报名成功</string>
+    <string name="apply_tip1">填写比赛报名信息</string>
+    <string name="apply_tip2">建议填写真实信息，便于奖品发放</string>
+
+    <string name="match_desc">交易品种：仅限沪深A股、创业板股票。特殊比赛如“分级基金”、“股指期货”等例外；
+\n\n委托时间：每个交易日里，15:01-16:00不能委托，其余时间都可以委托；非交易时间的委托在下一个交易时间生效；
+\n\n交易时间：虚拟盘交易时间与交易所规定的交易时间相同。</string>
+</resources>

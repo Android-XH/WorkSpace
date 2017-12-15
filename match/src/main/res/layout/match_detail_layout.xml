@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/yellow"
+        android:paddingLeft="@dimen/layout_padding">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="中国提出全业态量子期间与技术"
+            android:textColor="@color/yellow06"
+            android:id="@+id/tv_match_message"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/imv_match_message_close"
+            android:src="@android:drawable/ic_menu_close_clear_cancel" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/match_detail_tag"
+            android:text="持仓"
+            android:id="@+id/tv_hold"
+            />
+
+        <TextView
+            style="@style/match_detail_tag"
+            android:text="买入"
+            android:id="@+id/tv_buy"
+            />
+
+        <TextView
+            style="@style/match_detail_tag"
+            android:text="卖出"
+            android:id="@+id/tv_sell"
+            />
+
+        <TextView
+            style="@style/match_detail_tag"
+            android:text="撤单"
+            android:id="@+id/tv_cause"
+            />
+
+        <TextView
+            style="@style/match_detail_tag"
+            android:text="查询"
+            android:id="@+id/tv_qure"
+            />
+
+        <TextView
+            style="@style/match_detail_tag"
+            android:text="获奖"
+            android:id="@+id/tv_cup"
+            />
+    </LinearLayout>
+
+    <com.zbmf.StocksMatch.view.CustomCircleProgress
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        app:circle_background_color="@color/transparent"
+        app:circle_custom_progress="36.36"
+        app:circle_finished_color="@color/red"
+        app:circle_finished_default_color="@color/green"
+        app:circle_finished_stroke_width="8dp"
+        app:circle_progress_max="100"
+        app:circle_unfinished_color="#efefef"
+        app:circle_unfinished_stroke_width="8dp"
+        app:progress_text_color="@color/black_66"
+        app:progress_text_size="12dp"
+        app:show_text="true"
+        app:text="第3000名"
+        app:text_color="@color/black_33"
+        app:text_size="15dp"
+        app:text_title_color="@color/black_99"
+        app:text_title_size="12dp"
+        app:title="总收益率"
+        app:type="tag_text"
+        android:id="@+id/cp_yield"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="在1000名选手中战胜100人"
+        android:textColor="@color/black_66"
+        android:textSize="15dp"
+        android:id="@+id/tv_win_player"
+        />
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="10dp">
+        <TableRow
+            android:background="@color/app_bag"
+            android:orientation="horizontal"
+            android:paddingLeft="1dip"
+            android:paddingRight="1dip"
+            android:paddingTop="1dip"
+            android:paddingBottom="1dp"
+            >
+            <TextView
+                android:text="周收益率"
+                style="@style/match_detail_tab"
+                android:layout_marginLeft="0dp"
+                />
+            <TextView
+                android:text="123"
+                style="@style/match_detail_tab"
+                android:id="@+id/tv_week_rank"
+                />
+            <TextView
+                android:text="123"
+                style="@style/match_detail_tab"
+                android:id="@+id/tv_week_yield"
+                />
+        </TableRow>
+        <TableRow
+            android:background="@color/app_bag"
+            android:orientation="horizontal"
+            android:paddingLeft="1dip"
+            android:paddingRight="1dip"
+            android:paddingBottom="1dp"
+            >
+            <TextView
+                android:text="日收益率"
+                style="@style/match_detail_tab"
+                android:layout_marginLeft="0dp"
+                />
+            <TextView
+                android:text="123"
+                style="@style/match_detail_tab"
+                android:id="@+id/tv_day_rank"
+                />
+            <TextView
+                android:text="123"
+                style="@style/match_detail_tab"
+                android:id="@+id/tv_day_yield"
+                />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
